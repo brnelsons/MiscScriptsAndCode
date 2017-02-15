@@ -1,0 +1,46 @@
+section: screens
+	BNELSON-LINUX:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none 
+		switchCornerSize = 0
+	bnelson:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		switchCorners = none 
+		switchCornerSize = 0
+end
+
+section: aliases
+end
+
+section: links
+	BNELSON-LINUX:
+		right = bnelson
+	bnelson:
+		left = BNELSON-LINUX
+end
+
+section: options
+	relativeMouseMoves = true
+	screenSaverSync = true
+	win32KeepForeground = false
+	clipboardSharing = true
+	switchCorners = none 
+	switchCornerSize = 0
+	keystroke(Control+Alt+Left) = keystroke(Control+Alt+Left,*)
+	keystroke(Control+Alt+Right) = keystroke(Control+Alt+Right,*)
+	keystroke(Control+Alt+Up) = keystroke(Control+Alt+Up,*)
+	keystroke(Control+Alt+Down) = keystroke(Control+Alt+Down,*)
+	keystroke(Control+Shift+Alt+Left) = keystroke(Control+Shift+Alt+Left,*)
+	keystroke(Control+Shift+Alt+Right) = keystroke(Control+Shift+Alt+Right,*)
+	keystroke(Control+Shift+Alt+Up) = keystroke(Control+Shift+Alt+Up,*)
+	keystroke(Control+Shift+Alt+Down) = keystroke(Control+Shift+Alt+Down,*)
+	keystroke(Control+Alt+l) = keystroke(Control+Alt+l,BNELSON-LINUX)
+	keystroke(Control+Tab) = keystroke(Super+w,BNELSON-LINUX),switchToScreen(BNELSON-LINUX)
+end
+
